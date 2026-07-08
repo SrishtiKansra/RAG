@@ -26,3 +26,6 @@ pandas>=2.0.0
 # --- Notebook charts ---
 matplotlib>=3.7.0
 jupyter>=1.0.0
+
+# --- Testing ---
+pytest>=8.0.0

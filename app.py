@@ -24,13 +24,23 @@ SOURCES = {
     "fever": ("data/fever/real", "data/fever/poisoned"),
 }
 
-st.set_page_config(page_title="RAG Misinformation Tester", page_icon="🎵")
-st.title("🎵 RAG Misinformation Robustness Tester")
-st.caption(
-    "Ask questions and watch how poisoned documents and verification mode "
-    "change the answer."
-)
+# st.set_page_config(page_title="RAG Misinformation Tester", page_icon="🎵")
+# st.title("🎵 RAG Misinformation Robustness Tester")
+# st.caption(
+#     "Ask questions and watch how poisoned documents and verification mode "
+#     "change the answer."
+# )
 
+st.set_page_config(page_title="RAG Misinformation Tester", page_icon="🛡️")
+st.markdown(
+    "<h1 style='text-align: center;'>🛡️ RAG Misinformation<br>Robustness Tester</h1>",
+    unsafe_allow_html=True,
+)
+st.markdown(
+    "<p style='text-align: center;'>Ask questions and watch how poisoned "
+    "documents and verification mode change the answer.</p>",
+    unsafe_allow_html=True,
+)
 
 @st.cache_resource(show_spinner=False)
 def get_ingestor() -> DocumentIngestor:

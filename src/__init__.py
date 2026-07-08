@@ -1,1 +1,1 @@
-"""music-rag source package: ingestion, retrieval, generation, evaluation."""
+"""RAG misinformation source package: ingestion, retrieval, generation, evaluation."""
